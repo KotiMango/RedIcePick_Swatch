@@ -1,5 +1,5 @@
 .ColorRange {
-  display: inline-block;
+  display: block;
   width: 20vw;
   margin: 2.5vw 2.5vw;
 }
@@ -27,6 +27,27 @@
 
 .ColorRange input[type="range"]:focus {
   outline: none;
+}
+
+#alpha {
+  -webkit-appearance: slider-vertical;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -650px;
+  left: 350px;
+  opacity: 0;
+}
+
+#lightness {
+  -webkit-appearance: slider-vertical;
+  transform: translate(92%, -435%);
+  opacity: 0;
+}
+
+#saturation {
+  -webkit-appearance: slider-vertical;
+  transform: translate(180%, -285%);
+  opacity: 0;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
